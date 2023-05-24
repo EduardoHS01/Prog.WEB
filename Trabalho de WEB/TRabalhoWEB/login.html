@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>       
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>mical</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <link rel="stylesheet" href="css/login.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+    <body>
+        <header>
+            <!-- header inner -->
+            <div class="header">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                           <div class="center-desk">
+                              <div class="logo">
+                                 <a href="index.html">CaRap Brasil</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                           </button>
+                           <div class="collapse navbar-collapse" id="navbarsExample04">
+                              <ul class="navbar-nav mr-auto">
+                                 <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">Inicio</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+    <div id='cadastro'>
+         <h1>Login</h1>
+     <label for="username">Usuário:</label>
+     <input type="text" id="username"><br>
+     <label for="password">Senha:</label>
+     <input type="password" id="password"><br>
+     <label for="cliente">Cliente</label>
+     <input type="radio" id="cliente" name="userType" value="cliente" checked>
+     <label for="funcionario">Funcionário</label>
+     <input type="radio" id="funcionario" name="userType" value="funcionario"><br>
+     <button onclick="login()">Entrar</button></div>
+ </body>
+
+
+
+
+
+   <script type="text/javascript">
+    function login() {
+        // obter as informações de login digitadas pelo usuário
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        var userType = document.querySelector('input[name="userType"]:checked').value;
+         // obter o arquivo JSON com os usuários e senhas
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "json/usuarios.json", true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                // verificar se o usuário e senha estão corretos
+                var usuarios = JSON.parse(xhr.responseText);
+                var usuarioEncontrado = usuarios.find(function(usuario) {
+                    return usuario.username === username && usuario.password === password && usuario.userType === userType;
+                });
+                 if (usuarioEncontrado) {
+                    // redirecionar para a página correspondente
+                    if (usuarioEncontrado.userType === "cliente") {
+                        window.location.href = "indexU.html";
+                    } else if (usuarioEncontrado.userType === "funcionario") {
+                        window.location.href = "index2.html";
+                    }
+                } else {
+                    alert("Usuário ou senha incorretos!");
+                }
+            }
+        };
+        xhr.send();
+    }
+</script>
+
+</html>

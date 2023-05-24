@@ -1,0 +1,31 @@
+[{
+    "nome":"Real",
+    "tipo":"Peças Automotivas"
+},{
+    "nome":"Dasa",
+    "tipo":"Peças Automotivas"
+},{
+    "nome":"Michelin",
+    "tipo":"Pneu"
+},{
+    "nome":"BridgeStone",
+    "tipo":"Pneu"
+},{
+    "nome":"WEG",
+    "tipo":"Motores"
+},{
+    "nome":"Pellegrino",
+    "tipo":"Peças Automotivas"
+},{
+    "nome":"T-Systems",
+    "tipo":"Hardware"
+},{
+    "nome":"Tesla",
+    "tipo":"Hardware"
+},{
+    "nome":"Tesla",
+    "tipo":"Software"
+},{
+    "nome":"Stellantis",
+    "tipo":"Motores"
+}]

@@ -1,0 +1,49 @@
+[{
+    "nome":"Func1",
+    "funcao":"Encarregado",
+    "setor":"Logistica"
+},
+{
+    "nome":"Func2",
+    "funcao":"Encarregado",
+    "setor":"Marketing"
+},
+{
+    "nome":"Antonio Estarque",
+    "funcao":"Diretor",
+    "setor":""
+},{
+    "nome":"Steven Rogerio",
+    "funcao":"Gerente Geral",
+    "setor":" "
+},
+{
+    "nome":"Func3",
+    "funcao":"Gerente de Produção",
+    "setor":"Produção"
+},
+{
+    "nome":"Func4",
+    "funcao":"Gerente Administrativo",
+    "setor":"Administração"
+},
+{
+    "nome":"Func5",
+    "funcao":"Auxiliar de produção",
+    "setor":"Produção"
+},
+{
+    "nome":"Func6",
+    "funcao":"Auxiliar de logistica",
+    "setor":"Logistica"
+},
+{
+    "nome":"Func7",
+    "funcao":"Zelador",
+    "setor":"Limpeza"
+},
+{
+    "nome":"Func8",
+    "funcao":"Encarregado",
+    "setor":"Produção"
+}]

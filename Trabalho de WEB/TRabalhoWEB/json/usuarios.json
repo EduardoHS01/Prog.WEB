@@ -1,0 +1,12 @@
+[
+    {
+        "username": "cliente1",
+        "password": "senha1",
+        "userType": "cliente"
+    },
+    {
+        "username": "funcionario1",
+        "password": "senha1",
+        "userType": "funcionario"
+    }
+]

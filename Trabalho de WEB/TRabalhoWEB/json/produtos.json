@@ -1,0 +1,50 @@
+[{
+    "nome":"Motor Turbo FIAT" ,
+    "preco": 5400,
+    "qtd": 12,
+    "data":"10/04/2023",
+    "prazo":3
+},
+{
+    "nome":"Motor Turbo CHEVROLET" ,
+    "preco": 5000,
+    "qtd": 7,
+    "data":"09/04/2023",
+    "prazo":3
+},
+{
+    "nome":"Motor Turbo JEEP" ,
+    "preco": 7000,
+    "qtd": 13,
+    "data":"07/04/2023",
+    "prazo":3
+},
+{
+    "nome":"BOMBA D'AGUA FIAT" ,
+    "preco": 1200,
+    "qtd": 36,
+    "data":"12/04/2023",
+    "prazo":2
+},
+{
+    "nome":"BOMBA D'AGUA HYUNDAI" ,
+    "preco": 1300,
+    "qtd": 12,
+    "data":"10/04/2023",
+    "prazo":3
+},
+{
+    "nome":"BOMBA D'AGUA HONDA" ,
+    "preco": 1200,
+    "qtd": 12,
+    "data":"10/04/2023",
+    "prazo":3
+},
+{
+    "nome":"BOMBA DE OLEO FIAT" ,
+    "preco": 2300,
+    "qtd": 12,
+    "data":"10/04/2023",
+    "prazo":12
+}
+]
